@@ -1,20 +1,21 @@
 //- _menu.pug
-.container.menu
-  nav.navbar.navbar-expand-lg
-    a(href="#0").navbar-brand 
-      svg.menu__logo
-        use(xlink:href="./img/svg-icons.svg#logo")
-    a(href="#0").menu__toggler.navbar-toggler
-      span.navbar-toggler-icon E
-    .collapse.navbar-collapse
-      ul.menu__nav.navbar-nav.ml-auto
-        li.menu__item.navbar-item
-          a.menu__link.navbar-link(href="#home") Home
-        li.menu__item.navbar-item
-          a.menu__link.navbar-link(href="#about") About
-        li.menu__item.navbar-item
-          a.menu__link.navbar-link(href="#services") Services
-        li.menu__item.navbar-item
-          a.menu__link.navbar-link(href="#works") Works
-        li.menu__item.navbar-item
-          a.menu__link.navbar-link(href="#contact") Contact
+.container-fluid.menu._scroll
+  .container
+    nav.navbar.navbar-expand-lg
+      a(href="#0").navbar-brand 
+        svg.menu__logo
+          use(xlink:href="./img/svg-icons.svg#logo")
+      a(href="#0").menu__toggler.navbar-toggler
+        span.navbar-toggler-icon E
+      .collapse.navbar-collapse
+        ul.menu__nav.navbar-nav.ml-auto
+          li.menu__item.navbar-item
+            a.menu__link.navbar-link(href="#") Home
+          li.menu__item.navbar-item
+            a.menu__link.navbar-link(href="#about") About
+          li.menu__item.navbar-item
+            a.menu__link.navbar-link(href="#services") Services
+          li.menu__item.navbar-item
+            a.menu__link.navbar-link(href="#works") Works
+          li.menu__item.navbar-item
+            a.menu__link.navbar-link(href="#contact") Contact

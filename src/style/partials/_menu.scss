@@ -20,7 +20,9 @@
     &:hover {
       color: darken($color-font-inv, 40);
       text-decoration: none;
-      
     }
+  }
+  &._scroll {
+    background-color: rgba($bg-menu-color, .8);
   }
 }

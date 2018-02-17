@@ -9,6 +9,9 @@
   margin: 2rem;
   fill: $color-font;
 }
+.title {
+  @include title(700);
+}
 .button {
   font-size: 1.25rem;
   color: $color-font;
@@ -19,4 +22,5 @@
   text-transform: capitalize;
   display: block;
   margin: 1rem auto;
+  padding: 1rem 3rem;
 }

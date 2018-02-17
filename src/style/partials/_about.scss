@@ -1,13 +1,25 @@
 // about
 .about {
   padding-top: 7.5rem;
-  padding-bottom: 7.5rem;
+  @media screen and (max-width: 767px) {
+    padding-top: 2rem;
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 0;
+  }
   &__heading {
+    color: $color-font-inv;
     background-image: url('../img/bg-about.jpg');
     background-position: 35% 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 757px) {
+      padding-top: 5rem;
+    }
+  }
+  &__icon {
+    fill: $color-font-inv;
   }
   &__article {
     padding-top: 4.625rem;
@@ -16,5 +28,8 @@
   &__text {
     font-size: 1.25rem;
     line-height: 1.2;
+  }
+  &__button {
+    margin-top: 5.5rem;
   }
 }
