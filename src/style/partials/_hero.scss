@@ -1,0 +1,29 @@
+// _hero
+.hero {
+  background-image: url("../img/bg-hero.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  &__heading {
+    margin-top: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: $color-font-inv;
+  }
+  &__title {
+    @include title(700, 4.5rem);
+    margin-bottom: 3rem;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  &__description {
+    font-style: italic;
+    font-size: 1.875rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.25rem;
+    }
+  }
+}

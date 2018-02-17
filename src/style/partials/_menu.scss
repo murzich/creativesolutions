@@ -1,0 +1,26 @@
+// _menu.scss
+
+.menu {
+  color: $color-font-inv;
+  // mix-blend-mode: darken;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  &__logo {
+    fill: $color-font-inv;
+    height: 70px;
+    width: 50px
+  }
+  &__item {
+    padding-left: 1rem;
+  }
+  &__link {
+    color: $color-font-inv;
+    @include title(400, 1.5rem);
+    &:hover {
+      color: darken($color-font-inv, 40);
+      text-decoration: none;
+      
+    }
+  }
+}

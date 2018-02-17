@@ -1,0 +1,20 @@
+@mixin title($weight: 400, $size: 2.25rem) {
+  font: $weight $size 'ProximaNova', sans-serif;
+  text-transform: uppercase;
+}
+.title__icon {
+  order: -1;
+  width: 60px;
+  height: 60px;
+  margin: 2rem;
+  fill: $color-font;
+}
+.button {
+  font-size: 1.25rem;
+  color: $color-font;
+  border: 1px solid;
+  border-color: inherit;
+  background: transparent;
+  font-style: italic;
+  text-transform: capitalize;
+}
