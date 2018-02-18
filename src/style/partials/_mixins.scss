@@ -24,3 +24,16 @@
   margin: 1rem auto;
   padding: 1rem 3rem;
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+  &__link {
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin: .8rem;
+    fill: $bg-color;
+  }
+}

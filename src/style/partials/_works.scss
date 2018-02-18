@@ -2,6 +2,7 @@
 .works {
   color: $color-font-inv;
   background-image: url('../img/bg-works.jpg');
+  background-size: cover;
   &__heading {
     // text-align: center;
     margin-top: 5rem;
@@ -14,7 +15,7 @@
   }
   &__icon {
     fill: $color-font-inv;
-    order: -1;
+    // order: -1;
   }
   &__img {
     width: 100%;
