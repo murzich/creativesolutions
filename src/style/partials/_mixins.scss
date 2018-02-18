@@ -8,9 +8,11 @@
   height: 60px;
   margin: 2rem;
   fill: $color-font;
+  flex-shrink: 0;
 }
 .title {
   @include title(700);
+  text-align: center;
 }
 .button {
   font-size: 1.25rem;
@@ -29,11 +31,13 @@
   display: flex;
   justify-content: center;
   &__link {
+    border-radius: 50% 50%;
+    margin: .8rem;
   }
   &__icon {
-    width: 2rem;
-    height: 2rem;
-    margin: .8rem;
+    border-radius: 50% 50%;
+    max-width: 2rem;
+    max-height: 2rem;
     fill: $bg-color;
   }
 }

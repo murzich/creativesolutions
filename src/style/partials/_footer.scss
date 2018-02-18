@@ -1,0 +1,44 @@
+// _footer
+.footer {
+  position: relative;
+  background-color: $bg-menu-color;
+  padding-top: 4.7rem;
+  padding-bottom: 4.7rem;
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+  }
+  &__layout {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  &__to-top {
+    position: absolute;
+    top: -12.5rem;
+    right: 0;
+    width: 5.25rem;
+    height: 5.25rem;
+    background-color: $bg-menu-color;
+    padding-top: 1.5rem;
+    @media screen and (max-width: 768px) {
+      position: relative;
+      padding-top: 0;
+      height: 2rem;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+}
+.arrow--top {
+  fill: $color-font-inv;
+  max-width: 2.5rem;
+  max-height: 2rem;
+}

@@ -1,0 +1,129 @@
+// _contact.scss
+.contact {
+  padding-top: 5rem;
+  padding-bottom: 3.375rem;
+  position: relative;
+  height: 100vh;
+  min-height: 900px;
+  max-height: 1000px;
+  overflow: hidden;
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    // height: calc(100% - 48.5rem);
+    height: 80%;
+    @media screen and (min-width: 576px) {
+      height: 100%;
+      
+    }
+  }
+  &__heading {
+    // text-align: center;
+    // margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-font-inv;
+    flex-shrink: 0;
+  }
+  &__title {
+    // flex-grow: 1;
+    // flex-
+  }
+  &__icon {
+    fill: $color-font-inv;
+  }
+  &__form {
+    // width: 100%;
+    margin-bottom: 2rem;
+    @media screen and (min-width: 768px) {
+      width: 75%;
+    }
+  }
+  &__input {
+    width: 100%;
+    margin: 0 0 .8rem;
+    background-color: rgba($bg-color, .5);
+    border: none;
+    border-radius: .25rem;
+    display: block;
+    padding: 1.25rem 1.5rem;
+    color: $color-font-inv;
+    &--message {
+      height: 12.5rem;
+      resize: vertical;
+    }
+    &--inline {
+      @media screen and (min-width: 768px) {
+        display: inline-block;
+        width: calc(50% - .4rem);
+        &:first-child {
+          margin-right: .8rem;
+        }
+      }
+    }
+    &::placeholder {
+      color: $color-font-inv;
+      font-style: italic;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    @include title(700, 1.25rem);
+    color: $color-font-inv;
+    padding: 1.5rem 4.125rem;
+    background-color: $bg-menu-color;
+    border: none;
+    border-radius: .25rem;
+    box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.5);
+    white-space: nowrap;
+  }
+  &__address {
+    display: flex;
+    background: rgba($bg-color, .5);
+    
+    
+    @media screen and (min-width: 576px) {
+      position: absolute;
+      bottom: 30rem;
+      right: -16.5rem;
+      width: 22rem;
+      transition: right .4s ease-in-out;
+      &--phone {
+        bottom: 24.25rem;
+      }
+      &:hover {
+        right: 0rem;
+      }
+      
+    }
+  }
+  &__tag {
+    background: $bg-menu-color;
+    padding: 1.5rem;
+
+  }
+  &__wwe {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: $bg-color;
+  }
+  &__post {
+    align-self: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+}
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  // TODO: remove this after
+  background-image: url("../img/bg-hero.jpg");
+}

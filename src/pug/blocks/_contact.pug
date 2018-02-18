@@ -1,0 +1,32 @@
+//- _contact.pug
+section#contact.contact.container-fluid
+  #map
+  .container.contact__overlay
+    .row
+      .contact__heading.col-auto
+        h2.contact__title.title Get in touch
+        svg.contact__icon.title__icon
+          use(xlink:href="./img/svg-icons.svg#placeholder")
+    form.contact__form.row
+      .col-12
+        input(type="text" name="name", placeholder="Your Name*").contact__input.contact__input--inline
+        input(type="email" name="email", placeholder="Your Email*").contact__input.contact__input--inline
+        textarea.contact__input(name="message", cols="30", rows="10", placeholder="Your Message*").contact__input--message
+        button(action="submit").contact__button Send message
+  .row
+    .col-12
+      .contact__address
+        .contact__tag
+          svg.contact__wwe
+            use(xlink:href="./img/svg-icons.svg#home")
+        address.contact__post Ikan Piranha Atas 220C 
+          br
+          | Malang - East Java
+          br
+          | Indonesia
+    .col-12
+      .contact__address.contact__address--phone
+        .contact__tag
+          svg.contact__wwe
+            use(xlink:href="./img/svg-icons.svg#iphone")
+        address.contact__post +6281235966914
