@@ -1,0 +1,26 @@
+// _works.scss
+.works {
+  color: $color-font-inv;
+  background-image: url('../img/bg-works.jpg');
+  &__heading {
+    // text-align: center;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+
+  }
+  &__icon {
+    fill: $color-font-inv;
+    order: -1;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+  &__button {
+    // color: inherit;
+  }
+}
