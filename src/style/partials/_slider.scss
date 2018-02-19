@@ -4,7 +4,9 @@
 {
     background: #fff url('./ajax-loader.gif') center center no-repeat;
 }
-
+.slick-slide {
+  margin: 0 15px;
+}
 /* Icons */
 // @font-face
 // {
@@ -27,8 +29,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 40px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -88,11 +90,23 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '<';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 40px;
+    // background-color: #324;
+    background-image: url('../img/svg-icons.svg#arrow-left');
+    background-repeat: no-repeat;
+    background-size: 30px 40px;
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '';
+    background-image: url('../img/svg-icons.svg#arrow-right');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .slick-next
@@ -106,11 +120,17 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '>';
+    background-image: url('../img/svg-icons.svg#arrow-left');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '';
+    background-image: url('../img/svg-icons.svg#arrow-left');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Dots */
