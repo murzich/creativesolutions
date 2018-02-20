@@ -27,7 +27,7 @@
     margin-top: 2rem;
   }
   &__img {
-    background-image: linear-gradient(to bottom, $bg-color 100%);
+    background-image: linear-gradient(to bottom, $bg-color 0%, $bg-color 100%);
     background-size: 100% 50%;
     background-position: top;
     background-repeat: no-repeat;
