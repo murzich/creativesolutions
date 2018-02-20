@@ -9,8 +9,6 @@
     padding-bottom: 2.875rem;
   }
   &__heading {
-    // text-align: center;
-//     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +22,6 @@
   }
   &__icon {
     fill: $color-font-inv;
-    // order: -1;
   }
   &__slider {
     padding: 0;
@@ -39,7 +36,6 @@
     height: auto;
   }
   &__button {
-    // color: inherit;
   }
   &__arrow {
     fill: $bg-color;
