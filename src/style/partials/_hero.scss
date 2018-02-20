@@ -18,14 +18,14 @@
   &__title {
     @include title(700, 4.5rem);
     margin-bottom: 3rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 2rem;
     }
   }
   &__description {
     font-style: italic;
     font-size: 1.875rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       font-size: 1.25rem;
     }
   }

@@ -2,10 +2,10 @@
 .footer {
   position: relative;
   background-color: $bg-menu-color;
-  padding-top: 4.7rem;
-  padding-bottom: 4.7rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
   text-align: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding-top: 1rem;
     padding-bottom: .5rem;
   }
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       flex-direction: column;
     }
   }
@@ -26,7 +26,7 @@
     height: 5.25rem;
     background-color: $bg-menu-color;
     padding-top: 1.5rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       position: relative;
       padding-top: 0;
       height: 2rem;

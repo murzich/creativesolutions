@@ -1,6 +1,7 @@
 // _contact.scss
 .contact {
-  padding-top: 5rem;
+  background-color: $bg-menu-color;
+  padding-top: 2rem;
   padding-bottom: 3.375rem;
   position: relative;
   height: 100vh;
@@ -12,11 +13,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    // height: calc(100% - 48.5rem);
     height: 80%;
     @media screen and (min-width: 576px) {
       height: 100%;
-      
     }
   }
   &__heading {
@@ -124,6 +123,5 @@
   left: 0;
   bottom: 0;
   right: 0;
-  // TODO: remove this after
-  background-image: url("../img/bg-hero.jpg");
+  opacity: .5;
 }

@@ -1,9 +1,9 @@
 @charset 'UTF-8';
 /* Slider */
-.slick-loading .slick-list
-{
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
-}
+// .slick-loading .slick-list
+// {
+//     // background: #fff url('./ajax-loader.gif') center center no-repeat;
+// }
 .slick-slide {
   margin: 0 15px;
 }
@@ -143,12 +143,12 @@
 {
     position: absolute;
     bottom: -25px;
-
     display: block;
-
+    
     width: 100%;
     padding: 0;
     margin: 0;
+    margin-left: -15px;
 
     list-style: none;
 

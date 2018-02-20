@@ -1,6 +1,10 @@
 // _menu.scss
 
 .menu {
+  .container {
+    padding: 0;
+  }
+  transition: all .5s;
   color: $color-font-inv;
   // mix-blend-mode: darken;
   position: fixed;
@@ -9,7 +13,11 @@
   &__logo {
     fill: $color-font-inv;
     height: 70px;
-    width: 50px
+    width: 50px;
+    @media screen and (max-width: 575px) {
+      height: 35px;
+      width: 25px;
+    }
   }
   &__item {
     padding-left: 1rem;
@@ -17,12 +25,91 @@
   &__link {
     color: $color-font-inv;
     @include title(400, 1.5rem);
+    transition: all .2s;
     &:hover {
       color: darken($color-font-inv, 40);
       text-decoration: none;
     }
   }
+  &__toggler {
+    font-size: 2rem;
+    color: $color-font-inv;
+    transition: all .2s;
+    padding: 0;
+    &:hover {
+      color: $color-font; 
+    }
+  }
   &._scroll {
     background-color: rgba($bg-menu-color, .8);
+  }
+  .navbar-collapse {
+    @media screen and (max-width: 991px) {
+      opacity: 0;
+      transition: all .5s;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-top: 6.4rem;
+      max-height: 100vh;
+      background-color: rgba($bg-menu-color, .8);
+      ul {
+        justify-content: space-around;
+        align-items: center;
+      }
+      li {
+        margin: 1rem 0;
+        @media screen and (orientation: landscape) {
+          margin: .5rem 0;
+        }
+      }
+    }
+    @media screen and (max-width: 575px) {
+      margin-top: 4.2rem;
+    }
+
+    &._show {
+      opacity: 1;
+    }
+  }
+  .collapse {
+    @media screen and (max-width: 991px) {
+      display: block;
+      visibility: hidden;
+    }
+  }
+  ._show {
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 6.4rem;
+    @media screen and (max-width: 575px) {
+      margin-top: 4.2rem;
+    }
+    max-height: 100vh;
+    background-color: rgba($bg-menu-color, .9);
+    ul {
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+}
+.nav-up {
+  top: -6.4rem;
+}
+.nav-down {
+}
+._active-menu {
+  & .nav-up {
+    top: 0;
+  }
+  & .menu {
+    background-color: rgba($bg-menu-color, .9);
   }
 }
