@@ -79,6 +79,16 @@
     border-radius: .25rem;
     box-shadow: inset 0px -4px 0px 0px rgba(0,0,0,0.5);
     white-space: nowrap;
+    transition: all .5s ease-in-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:active {
+      animation-name: bounceOut;
+    }
   }
   &__address {
     display: flex;

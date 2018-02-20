@@ -4,6 +4,11 @@
   .container {
     padding: 0;
   }
+  .navbar-expand-lg {
+    @media screen and (min-width: 991px) {
+      padding-top: 2rem;
+    }
+  }
   transition: all .5s;
   color: $color-font-inv;
   // mix-blend-mode: darken;
@@ -23,7 +28,8 @@
     }
   }
   &__item {
-    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.9rem;
   }
   &__link {
     color: $color-font-inv;
@@ -104,7 +110,7 @@
 
 }
 .nav-up {
-  top: -6.4rem;
+  top: -8rem;
 }
 .nav-down {
 }

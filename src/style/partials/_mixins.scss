@@ -4,7 +4,7 @@
 }
 .title__icon {
   order: -1;
-  width: 60px;
+  width:  60px;
   height: 60px;
   margin: 2rem;
   fill: $color-font;
@@ -24,17 +24,24 @@
   font-style: italic;
   text-transform: capitalize;
   margin: 1rem auto;
-  padding: 1rem 3rem;
+  padding: .7rem 3.125rem;
   cursor: pointer;
   align-self: center;
   margin-right: auto;
   margin-left: auto;
+  transition: all .5s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   &:hover {
     background-color: white;
     text-decoration: none;
     color: darken($color-font, 10%);
+    transform: scale(1.2);
   }
-  transition: all .2s;
+  &:active {
+    animation-name: bounceOut;
+  }
 }
 
 .social {
@@ -49,5 +56,40 @@
     max-width: 2rem;
     max-height: 2rem;
     fill: $bg-color;
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+@keyframes bounceOut {
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  50%,
+  55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 }

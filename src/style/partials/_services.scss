@@ -2,25 +2,33 @@
 .services {
   padding-top: 0;
   @media screen and (min-width: 768px) {
-    padding-top: 7.5rem;
+    padding-top: 5.6rem;
+//     .row {
+//       margin-right: -45px;
+//     }
   }
   &__heading {
     color: $color-font-inv;
     background-image: url('../img/bg-services.jpg');
-    background-position: 55% 70%;
+    background-position: 67% 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
     order: 0;
-    padding-top: 5rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
     @media screen and (min-width: 768px) {
       order: 1;
+      padding-top: 5rem;
+//       margin-left: -25px;
+//       margin-right: -120px;
     }
   }
   &__title {
-    padding-bottom: 4rem;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 4rem;
+    }
   }
   &__icon {
     fill: $color-font-inv;
@@ -29,8 +37,16 @@
     font-size: 1.125rem;
     font-style: italic;
   }
+  &__list {
+    @media screen and (min-width: 768px) {
+      margin-left: -15px;
+    }
+  }
   &__card {
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
+    @media screen and (min-width: 768px) {
+      padding: 4rem 2rem 7rem;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;

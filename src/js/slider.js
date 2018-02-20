@@ -7,7 +7,7 @@
     prevArrow: '<svg class="slick-prev works__arrow"><use xlink:href="./img/svg-icons.svg#arrow-left" /></svg>',
   });
   $('#slider--teams').slick({
-    dots: true,
+    dots: false,
     nextArrow: '<svg class="slick-next team__arrow"><use xlink:href="./img/svg-icons.svg#arrow-right" /></svg>',
     prevArrow: '<svg class="slick-prev team__arrow"><use xlink:href="./img/svg-icons.svg#arrow-left" /></svg>',
     infinite: false,

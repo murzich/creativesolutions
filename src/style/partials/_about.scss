@@ -1,6 +1,6 @@
 // about
 .about {
-  padding-top: 7.5rem;
+  padding-top: 7.75rem;
   padding-bottom: 2rem;
   @media screen and (max-width: 767px) {
     padding-top: 2rem;
@@ -8,29 +8,50 @@
   @media screen and (max-width: 575px) {
     padding-top: 0;
   }
+//   @media screen and (min-width: 768px) {
+//     padding-left: 7px;
+//     padding-right: 7px;
+//   }
   &__heading {
     color: $color-font-inv;
     background-image: url('../img/bg-about.jpg');
-    background-position: 35% 20%;
+    background-position: 25% 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media screen and (max-width: 767px) {
-      padding-top: 5rem;
+//     @media screen and (max-width: 767px) {
+      padding-top: 2.6rem;      
+//     }
+    @media screen and (min-width: 768px) {
+      margin-left: -15px;
     }
   }
   &__icon {
     fill: $color-font-inv;
+    margin-bottom: 2.325rem;
   }
   &__article {
-    padding-top: 4.625rem;
+    padding-top: 4.5rem;
     padding-bottom: 1.5rem;
+    @media screen and (min-width: 768px) {
+//       margin-left: 0;
+      padding-left: 30px;
+    }
   }
   &__text {
     font-size: 1.25rem;
     line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+  &__layout {
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-top: 4.8rem;
+      margin-bottom: 3.75rem;
+      padding-left: 18px;
+    }
   }
   &__button {
-    margin-top: .5rem;
+//     margin-top: .5rem;
   }
 }

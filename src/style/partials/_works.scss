@@ -3,19 +3,36 @@
   color: $color-font-inv;
   background-image: url('../img/bg-works.jpg');
   background-size: cover;
+  padding-bottom: 1rem;
+  @media screen and (min-width: 768px) {
+    padding-top: 1rem;
+    padding-bottom: 2.875rem;
+  }
   &__heading {
     // text-align: center;
-    margin-top: 5rem;
+//     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   &__title {
-
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 768px) {
+      margin-top: -.1rem;
+      margin-bottom: 3.725rem;
+    }
   }
   &__icon {
     fill: $color-font-inv;
     // order: -1;
+  }
+  &__slider {
+    padding: 0;
+  }
+  &__example {
+    @media screen and (min-width: 768px) {
+      margin: 0 5px !important;
+    }
   }
   &__img {
     width: 100%;
@@ -26,5 +43,21 @@
   }
   &__arrow {
     fill: $bg-color;
+    @media screen and (min-width: 576px) {
+      &.slick-prev {
+        left: -30px;
+      }
+      &.slick-next {
+        right: -30px;
+      }      
+    }
+    @media screen and (min-width: 992px) {
+      &.slick-prev {
+        left: -17.5vw;
+      }
+      &.slick-next {
+        right: -17.5vw;
+      }
+    }
   }
 }

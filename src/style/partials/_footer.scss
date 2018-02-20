@@ -1,5 +1,6 @@
 // _footer
 .footer {
+  color: $color-font-inv;
   position: relative;
   background-color: $bg-menu-color;
   padding-top: 4.5rem;
@@ -16,6 +17,9 @@
     justify-content: space-between;
     @media screen and (max-width: 767px) {
       flex-direction: column;
+    }
+    .social__link {
+      margin: .8rem .8rem;
     }
   }
   &__to-top {
@@ -34,6 +38,10 @@
       right: 0;
       left: 0;
       margin: 0 auto;
+    }
+    transition: all .5s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
     }
   }
 }
